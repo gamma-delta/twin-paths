@@ -1,0 +1,19 @@
+{
+	"scripts": [
+		{
+			"file": "stage1.js"
+		},
+		{
+			"file": "stage2.js"
+		},
+		{
+			"file": "stage3.js"
+		},
+		{
+			"file": "stage4.js"
+		},
+		{
+			"file": "misc.js"
+		}
+	]
+}

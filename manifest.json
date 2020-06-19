@@ -1,0 +1,100 @@
+{
+  "minecraft": {
+    "version": "1.15.2",
+    "modLoaders": [
+      {
+        "id": "forge-31.2.19",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "Twin Paths",
+  "version": "",
+  "author": "",
+  "projectID": 0,
+  "files": [
+    {
+      "projectID": 250363,
+      "fileID": 2911830,
+      "required": true
+    },
+    {
+      "projectID": 225643,
+      "fileID": 2982292,
+      "required": true
+    },
+    {
+      "projectID": 328085,
+      "fileID": 2979593,
+      "required": true
+    },
+    {
+      "projectID": 309927,
+      "fileID": 2972162,
+      "required": true
+    },
+    {
+      "projectID": 231951,
+      "fileID": 2980321,
+      "required": true
+    },
+    {
+      "projectID": 265917,
+      "fileID": 2954814,
+      "required": true
+    },
+    {
+      "projectID": 238222,
+      "fileID": 2983856,
+      "required": true
+    },
+    {
+      "projectID": 238086,
+      "fileID": 2983730,
+      "required": true
+    },
+    {
+      "projectID": 357178,
+      "fileID": 2939224,
+      "required": true
+    },
+    {
+      "projectID": 306626,
+      "fileID": 2968257,
+      "required": true
+    },
+    {
+      "projectID": 306770,
+      "fileID": 2979277,
+      "required": true
+    },
+    {
+      "projectID": 281849,
+      "fileID": 2978403,
+      "required": true
+    },
+    {
+      "projectID": 241665,
+      "fileID": 2967462,
+      "required": true
+    },
+    {
+      "projectID": 301051,
+      "fileID": 2914445,
+      "required": true
+    },
+    {
+      "projectID": 243121,
+      "fileID": 2980651,
+      "required": true
+    },
+    {
+      "projectID": 245211,
+      "fileID": 2980534,
+      "required": true
+    }
+  ],
+  "overrides": "overrides"
+}
