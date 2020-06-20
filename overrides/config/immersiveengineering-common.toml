@@ -408,7 +408,7 @@
 	#A list of sounds that should not be muffled by the Ear Defenders. Adding to this list requires knowledge of the correct sound resource names.
 	earDefenders_SoundBlacklist = []
 	#Set this to true to completely disable the ore-crushing recipes with the Engineers Hammer
-	disable_hammer_crushing = false
+	disable_hammer_crushing = true
 	#The amount of base damage a Casull Cartridge inflicts
 	#Range: 0.0 ~ 1.7976931348623157E308
 	bulletDamage_casull = 10.0
