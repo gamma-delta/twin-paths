@@ -173,7 +173,7 @@ events.listen("server.datapack.recipes", function (ev) {
             X: 'minecraft:sugar',
             C: 'pneumaticcraft:lubricant_bucket',
         }
-    )
+    ).id('pneumaticcraft:speed_upgrade');
 });
 
 events.listen("jei.hide.items", function (ev) {
