@@ -134,6 +134,46 @@ events.listen("server.datapack.recipes", function (ev) {
     // Brass can't be made in the alloy kiln
     // why is 'kiln' an allowed word? what is that ln doing?
     ev.remove({ id: 'immersiveengineering:alloysmelter/brass' });
+
+    // Un-break IE creosote and Pneumatic lubricant recipes
+    ev.shaped(
+        { item: 'immersiveengineering:treated_wood_horizontal', count: 8 },
+        [
+            'WWW',
+            'WBW',
+            'WWW'
+        ],
+        {
+            W: '#minecraft:planks',
+            B: 'immersiveengineering:creosote_bucket'
+        }
+    ).id('immersiveengineering:crafting/treated_wood_horizontal');
+    ev.shaped(
+        { item: 'minecraft:torch', count: 12 },
+        [
+            '   ',
+            'WB ',
+            'SSS'
+        ],
+        {
+            W: '#minecraft:wool',
+            B: 'immersiveengineering:creosote_bucket',
+            S: '#forge:rods/wooden'
+        }
+    ).id('immersiveengineering:crafting/torch');
+    ev.shaped(
+        { item: 'pneumaticcraft:speed_upgrade' },
+        [
+            'LXL',
+            'XCX',
+            'LXL'
+        ],
+        {
+            L: '#pneumaticcraft:upgrade_components',
+            X: 'minecraft:sugar',
+            C: 'pneumaticcraft:lubricant_bucket',
+        }
+    )
 });
 
 events.listen("jei.hide.items", function (ev) {
