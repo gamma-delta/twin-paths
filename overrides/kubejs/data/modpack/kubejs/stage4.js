@@ -49,7 +49,13 @@ events.listen("server.datapack.recipes", function (ev) {
         var ingredients = [
             { tag: 'botania:runes/' + stuff[1] },
             { tag: 'botania:runes/' + stuff[2] },
-            item.of('minecraft:lingering_potion', { Potion: 'minecraft:' + stuff[3] }),
+            {
+                type: 'forge:nbt',
+                item: 'minecraft:lingering_potion',
+                nbt: {
+                    Potion: 'minecraft:' + stuff[3]
+                }
+            },
             { item: stuff[4] }
         ];
         if (typeof stuff[5] === 'string')
@@ -76,7 +82,13 @@ events.listen("server.datapack.recipes", function (ev) {
         ingredients: [
             { tag: 'botania:runes/summer' },
             { tag: 'botania:runes/fire' },
-            { item: 'minecraft:lingering_potion', nbt: { Potion: 'minecraft:regeneration' } },
+            {
+                type: 'forge:nbt',
+                item: 'minecraft:lingering_potion',
+                nbt: {
+                    Potion: 'minecraft:regeneration'
+                }
+            },
             { tag: 'forge:ingots/brick' },
             { item: 'minecraft:cobblestone_wall' },
             ['tube', 'brain', 'bubble', 'fire', 'horn'].map(function (coral) { return { item: 'minecraft:' + coral + '_coral_block' } }),
